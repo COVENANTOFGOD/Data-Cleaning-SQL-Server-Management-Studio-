@@ -1,7 +1,7 @@
 # Data Cleaning (SQL Server Management Studio)
 
 ## Purpose
-SSMS was used for:
+SSMS:
 Data exploration (profiling),
 Data type correction,
 Cross-checking (reconciliation).
