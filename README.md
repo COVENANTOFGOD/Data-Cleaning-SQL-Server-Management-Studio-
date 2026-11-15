@@ -48,7 +48,8 @@ datetime2	Higher precision and a wider range than datetime
 DECIMAL(10,2) for Price	Exact currency arithmetic, no floating-point drift
 UNION ALL	Keeps every row; duplicates are handled deliberately later, not silently dropped
 SourceSheet column	Makes every row traceable to its origin, which is needed to investigate duplicates
-4.3 Data exploration (profiling)
+
+## Data exploration (profiling)
 
 Conversion health check. The goal is zero failures.
 
@@ -81,6 +82,6 @@ HAVING COUNT(*) > 1;
 
 <img width="1237" height="767" alt="Data exploration" src="https://github.com/user-attachments/assets/901d3c96-57a4-4dd1-8af2-31bfb8f4ecc5" />
 
-4.5 Export for Python
+## Export for Python
 
 The typed table is exported from SSMS (Save Results As) to Main_Data.csv. Because the export has no header row, Python reads it with header=None and assigns the 9 column names itself.
